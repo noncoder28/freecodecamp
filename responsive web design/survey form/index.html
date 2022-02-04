@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+</head>
+<body>
+    <h1 id="title">My weight loosing challenge</h1>
+    <p id="description">Thank's for trying it!</p>
+    <form id="survey form">
+        <div class="form-group">
+            <label id="name-label" for="name">Name</label>
+            <input 
+            type="text"
+            name="Name"
+            id="name"
+            class="form-control"
+            placeholder="Enter your name"
+            required
+            />
+        </div>
+        <div class="form-group">
+            <label id="email-label" for="email">Email</label>
+            <input 
+            type="email"
+            name="Email"
+            id="email"
+            class="form-control"
+            placeholder="Enter your email"
+            required
+            />
+        </div>
+        <div class="form-group">
+            <label id="number" for="number">Weight <Weight<span class="clue">(optional)</span></label>
+            <input 
+                type="weight"
+                name="weight"
+                id="number"
+                min="1"
+                max="300"
+                class="form-control"
+            placeholder="Your weight"
+            />
+        </div>
+        <div class="form-group">
+            <p>Wich Sports do you currently do?</p>
+            <select id="dropdown" name="role" class="Select current sports" required>
+            <option disable selected value>Select current role</option>
+            <option value="Football">Football</option>
+            <option value="Ice Hockey">Ice Hockey</option>
+            <option value="Tennis">Tennis</option>
+            <option value="Rugby">Rugby</option>
+            <option value="Jogging">Jogging</option>
+            <option value="Sex">I hava alot of Sex</option>
+            <option value="Nothing at all">Nothing at all</option/>
+        </div>
+        <div class="form-group">
+        <p>How many kilos do you want to lose?</p>
+        <label>
+        <input
+        name="user question"
+        value="10KG"
+        type="radio"
+        class="input-radio"
+        checked
+        >10KG</label>
+        <label>
+            <input
+            name="user question"
+            value="20KG"
+            type="radio"
+            class="input-radio"
+            checked
+            >20KG</label>
+            <label>
+                <input
+                name="user question"
+                value="30KG"
+                type="radio"
+                class="input-radio"
+                checked
+                >30KG</label>
+    </div>
+    <div class="form-group">
+        <p>How much time do you want to spend per week for sports?</p>
+        <label>
+            <input
+        name="user question check"
+        value="1 hour"
+        type="checkbox"
+        class="checkbox"
+        checked
+        >1 hour</label>
+        <label>
+            <input
+        name="user question check"
+        value="2 hour"
+        type="checkbox"
+        class="checkbox"
+        checked
+        >2 hour</label>
+        <label>
+            <input
+        name="user question check"
+        value="3 hour"
+        type="checkbox"
+        class="checkbox"
+        checked
+        >3 hour</label>
+    </div>
+    <div class="form-group">
+        <p>Any comments or suggestions?</p>
+        <textarea
+          id="comments"
+          class="input-textarea"
+          name="comment"
+          placeholder="Enter your comment here..."
+        ></textarea>
+      </div>
+      <div class="form-group">
+        <button type="submit" id="submit" class="submit-button">
+          Submit
+        </button>
+      </div>
+    </form>
+</body>
+</html>
