@@ -1,1 +1,80 @@
 
+  html, body {
+    width: 100vw;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    display: grid;
+    margin: 0;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.5fr 3fr 5fr 2fr 0.5fr;
+    grid-template-areas:
+        "logo       nav"
+        "text       text"
+        "images     images"
+        "contact    contact"
+        "footer     footer";
+  }
+
+logo{
+    grid-area: logo;
+    background: #FFC558;
+    padding-left: 20px;
+    display: flex; 
+    justify-content: start; 
+    align-items: center;
+}
+nav{
+    grid-area: nav;
+    background: #a8813d;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+} 
+text{
+    grid-area: text;
+    font-size: 1.2rem;
+    background: #66BB6A;
+    padding-left: 100px;
+    padding-right: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+@media (min-width: 40em){
+images{
+    
+    grid-area: images;
+    background: #66BB6A;
+    display: flex;
+    justify-content: center;
+}
+
+}
+contact{
+    grid-area: contact;
+    background: #66BB6A;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer{
+    grid-area: footer;
+    background: #FFC558;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding: 10px;
+}
+.signatur{
+    font-size: 25px;
+    color: black;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding: 10px;
+
+}
+
