@@ -26,12 +26,12 @@ logo{
     justify-content: start; 
     align-items: center;
 }
-nav{
+.nav{
     grid-area: nav;
     background: #a8813d;
     display: flex;
     flex-direction: row;
-    justify-content: start;
+    justify-content: center;
 } 
 text{
     grid-area: text;
